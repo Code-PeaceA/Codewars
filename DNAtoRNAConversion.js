@@ -11,11 +11,18 @@
 
 
 
+// function DNAtoRNA(dna) {
+//   return dna
+//     .split('')
+//     .map(acid => {
+//       return acid == 'T' ? acid = 'U' : acid;
+//     })
+//     .join('')
+// }
+
+
+// Update - more consise solution:
+
 function DNAtoRNA(dna) {
-  return dna
-    .split('')
-    .map(acid => {
-      return acid == 'T' ? acid = 'U' : acid;
-    })
-    .join('')
+  return dna.replace(/T/g, 'U');
 }
